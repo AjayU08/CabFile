@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Input to database</h1>
+    <input type="text" placeholder="name" id="name" />
+    <button onclick="writeData()">submit</button>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCbztBPYwcX-VEgxPaspEH8P3t1jUOi-oA",
+        authDomain: "new-carmel-high-school.firebaseapp.com",
+        databaseURL: "https://new-carmel-high-school.firebaseio.com",
+        projectId: "new-carmel-high-school",
+        storageBucket: "new-carmel-high-school.appspot.com",
+        messagingSenderId: "775229379525",
+        appId: "1:775229379525:web:d97ae22d2f77693b2b71ac",
+        measurementId: "G-086LYYS98M"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
+</html>
